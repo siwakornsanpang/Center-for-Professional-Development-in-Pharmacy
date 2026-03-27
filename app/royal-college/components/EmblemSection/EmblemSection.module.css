@@ -3,150 +3,169 @@
     width: 100%;
 }
 
-/* ===================== GRID LAYOUT ===================== */
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 18px;
-}
-
-/* ===================== LOGO CARD ===================== */
-/* Tall card on the left spanning 3 rows */
-.logoCard {
-    grid-row: 1 / 4;
-    background: linear-gradient(135deg, #F8FAEB 0%, #F1F4DE 40%, #E6EBD0 100%);
-    border: 2px solid #E4EBCD;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+/* ===================== HERO CARD ===================== */
+.heroCard {
+    background: linear-gradient(to right, #FAFBF6 0%, #F5F7EC 80%, #E6ebd0 100%);
+    border: 2px solid #72721B33;
     border-radius: 20px;
-    padding: 30px 32px 32px 32px;
-    display: flex;
-    flex-direction: column;
-}
-
-.logoTopArea {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    padding: 40px 50px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
 }
 
-.logoImageWrapper {
-    flex-grow: 1;
+.heroLeftWrapper {
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
+    gap: 30px;
+    flex-shrink: 0;
 }
 
-.logoImage {
+.heroLeft {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 420px;
+}
+
+.mainLogo {
     width: 100%;
-    max-width: 210px;
     height: auto;
     object-fit: contain;
+    display: block;
 }
+
+
 
 .quoteIcon {
-    font-size: 84px;
-    color: #D9DFBE;
+    font-size: 100px;
+    color: #DEE4C6;
     font-family: Georgia, serif;
-    line-height: 0.8;
-    margin-top: 10px;
+    line-height: 0.6;
+    margin-top: 8px;
+    font-weight: bold;
+    flex-shrink: 0;
 }
 
-.logoTextWrapper {
-    margin-top: auto;
+.heroRight {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    padding-top: 50px;
+    gap: 12px;
 }
 
-.logoTitle {
-    font-size: 18px;
-    font-weight: 800;
-    color: #000000;
+.heroTitle {
+    font-size: 16px;
+    font-weight: 500;
+    color: #111;
+    margin: 0;
     line-height: 1.4;
-    text-align: left;
-    margin: 0;
 }
 
-.logoDesc {
-    font-size: 15px;
-    color: #222222;
-    line-height: 1.6;
-    text-align: left;
+.heroDesc {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.8;
     margin: 0;
+    font-weight: 400;
 }
 
-/* ===================== INFO CARD ===================== */
-.infoCard {
-    background: #F8F9F9;
+/* ===================== DETAILS GRID ===================== */
+.detailsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.detailCard {
+    background: #FAFAFA;
     border-radius: 16px;
     padding: 24px 28px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 10px;
+    gap: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.infoTitle {
+.detailCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+
+.iconWrapper {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 4px;
+}
+
+.cardTitle {
     font-size: 16px;
-    font-weight: 700;
-    color: #333;
+    font-weight: 500;
+    color: #222;
     margin: 0;
     line-height: 1.4;
 }
 
-.infoDesc {
-    font-size: 13px;
+.cardDesc {
+    font-size: 16px;
     color: #555;
-    line-height: 1.7;
-    margin: 0;
-}
-
-.infoQuote {
-    font-size: 14px;
-    font-weight: 700;
-    color: #222;
     line-height: 1.6;
-    margin: 8px 0 0 0;
+    margin: 0;
+    font-weight: 400;
 }
 
 /* ===================== RESPONSIVE ===================== */
 @media (max-width: 1024px) {
-    .grid {
-        gap: 12px;
+    .detailsGrid {
+        grid-template-columns: repeat(3, 1fr);
     }
-    .logoCard {
-        padding: 24px 20px;
+    .detailCard {
+        grid-column: span 1 !important; /* Reset spanning on smaller screens */
     }
-    .infoCard {
-        padding: 16px;
+    .heroCard {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 30px;
+        gap: 20px;
+    }
+    .heroLeftWrapper {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .quoteIcon {
+        margin: 10px auto;
+    }
+    .heroLeft {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .heroDivider {
+        display: none;
+    }
+    .heroTitle {
+        text-align: center;
+    }
+    .heroDesc {
+        text-align: center;
     }
 }
 
 @media (max-width: 768px) {
-    .grid {
-        grid-template-columns: 1fr;
-    }
-    .logoCard {
-        grid-row: auto;
+    .detailsGrid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 480px) {
-    .logoImage {
-        width: 80px;
-    }
-    .quoteIcon {
-        font-size: 32px;
-    }
-    .logoTitle {
-        font-size: 14px;
-    }
-    .infoTitle {
-        font-size: 13px;
-    }
-    .logoDesc, .infoDesc {
-        font-size: 12px;
+    .detailsGrid {
+        grid-template-columns: 1fr;
     }
 }

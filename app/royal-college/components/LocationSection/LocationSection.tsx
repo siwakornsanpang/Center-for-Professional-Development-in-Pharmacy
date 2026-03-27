@@ -42,40 +42,33 @@ export default function LocationSection() {
 
                 {/* LEFT: Image + text below */}
                 <div className={styles.leftColumn}>
-                    <img src="/images/location/img1.jpg" alt="Pharmacist" className={styles.mainImage} />
+                    <img src="/images/location/img1.png" alt="Pharmacist" className={styles.mainImage} />
                     <div className={styles.leftText}>
-                        <h3>วิทยาลัยเภสัชกรรมสมุนไพร</h3>
-                        <p>“ผสานภูมิปัญญาสมุนไพรไทยกับองค์ความรู้ทางวิทยาศาสตร์<br></br>เพื่อสร้างระบบสุขภาพที่มั่นคงและยั่งยืน”</p>
+                        <h3>"เชื่อมต่อทุกการเรียนรู้ ประสานงานทุกภารกิจวิชาชีพ"</h3>
+                        <p>สำนักงานราชวิทยาลัยเภสัชกรรมแห่งประเทศไทย พร้อมเป็นศูนย์กลางสนับสนุนการยกระดับศักยภาพเภสัชกรไทยในทุกมิติ</p>
                     </div>
                 </div>
 
                 {/* RIGHT: Full green contact card */}
                 <div className={styles.rightColumn}>
-                    <h2 className={styles.rightTitle}>วิทยาลัยเภสัชกรรมสมุนไพร</h2>
+                    <h2 className={styles.rightTitle}>ราชวิทยาลัยเภสัชกรรมแห่งประเทศไทย</h2>
 
                     <div className={styles.contactList}>
 
                         <div className={styles.contactItem}>
                             <div className={styles.contactIcon}><PinIcon /></div>
                             <div>
-                                <h4>ที่อยู่</h4>
-                                <p>เลขที่ 88/19 หมู่ 4 ถนนติวานนท์<br />ตำบลตลาดขวัญ อำเภอเมือง จังหวัดนนทบุรี 11000</p>
+                                <h4>ที่อยู่สำนักงานราชวิทยาลัยเภสัชกรรมแห่งประเทศไทย</h4>
+                                <p>88/19 อาคารมหิตลาธิเบศร ชั้น 8 กระทรวงสาธารณสุข<br />ถ. ติวานนท์ อำเภอเมืองนนทบุรี นนทบุรี 11000</p>
                             </div>
                         </div>
 
-                        <div className={styles.contactItem}>
-                            <div className={styles.contactIcon}><ClockIcon /></div>
-                            <div>
-                                <h4>เวลาทำการ</h4>
-                                <p>วันจันทร์ - ศุกร์ | 08.30 - 16.30 น. (ยกเว้นวันหยุดนักขัตฤกษ์)</p>
-                            </div>
-                        </div>
 
                         <div className={styles.contactItem}>
                             <div className={styles.contactIcon}><PhoneIcon /></div>
                             <div>
                                 <h4>โทรศัพท์</h4>
-                                <p>02-591-9992<br />02-591-9996</p>
+                                <p>02-591-9992 ต่อ 7</p>
                             </div>
                         </div>
 
@@ -87,16 +80,7 @@ export default function LocationSection() {
                             </div>
                         </div>
 
-                        <div className={styles.contactItem}>
-                            <div className={styles.contactIcon}><PersonIcon /></div>
-                            <div>
-                                <h4>ผู้ประสานงานหลักของวิทยาลัย</h4>
-                                <p>ศ.ดร.ภก.ชลภัทร สุขเกษม</p>
-                                <p>โทร: 081-902-3457 &nbsp;&nbsp; Line ID: Chonlaphat.suk</p>
-                                <p>Email: Chonlaphat.suk@mahidol.ac.th, Chonlaphat_suk@hotmail.com</p>
-                            </div>
-                        </div>
-
+                      
                     </div>
                 </div>
 

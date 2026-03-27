@@ -4,58 +4,132 @@ const MEMBERS = [
     {
         image: "/images/committee/member1.png",
         name: "รศ.ดร.ภญ.นริศา คำแก่น",
-        role: "ประธาน",
+        role: "นายกสภาเภสัชกรรม",
+        position: "ประธาน",
     },
     {
         image: "/images/committee/member2.png",
-        name: "ดร.ภญ.พิมพ์พิมล ตันสกุล",
-        role: "รองประธาน",
+        name: "ดร.ภก.นพดล อัจจิมาธีระ",
+        role: "อุปนายกสภาเภสัชกรรมคนที่สอง",
+        position: "รองประธาน",
     },
     {
         image: "/images/committee/member3.png",
-        name: "ผศ.ดร.ภก.วุฒิชัย วิสุทธิพรต",
-        role: "เลขาธิการ",
+        name: "รศ.ดร.ภก.วิชัย สันติมาลีวรกุล",
+        role: "ประธานวิทยาลัยเภสัชบำบัด",
+        position: "กรรมการ",
     },
     {
         image: "/images/committee/member4.png",
-        name: "ดร.ภก.อดิศักดิ์ ถมอุดทา",
-        role: "นายทะเบียน",
+        name: "รศ.ดร.ภญ.วรรณา ศรีวิริยานุภาพ",
+        role: "ประธานวิทยาลัยการคุ้มครองผู้บริโภคฯ",
+        position: "กรรมการ",
     },
     {
         image: "/images/committee/member5.png",
-        name: "รศ.ดร.ภญ.ประสบอร รินทอง",
-        role: "เหรัญญิก.",
+        name: "รศ.ดร.ภญ.นริศา คำแก่น",
+        role: "ประธานวิทยาลัยเภสัชกรรมสมุนไพร.",
+        position: "กรรมการ",
     },
     {
         image: "/images/committee/member6.png",
-        name: "ภญ.ชวัลวลัย เมฆสวัสดิชัย",
-        role: "เหรัญญิก",
+        name: "รศ.ดร.ภก.สาธิต พุทธิพิพัฒน์ขจร",
+        role: "ประธานวิทยาลัยเภสัชกรรมอุตสาหการ",
+        position: "กรรมการ",
     },
     {
         image: "/images/committee/member7.png",
-        name: "ภก.นฤทธิ์ เหลืองใส",
-        role: "นายทะเบียน",
+        name: "รศ.ดร.ภก.กร ศรเลิศล้ำวาณิช",
+        role: "ประธานวิทยาลัยการบริหารเภสัชกิจ",
+        position: "กรรมการ",
     },
      {
         image: "/images/committee/member8.png",
-        name: "ดร.ภญ.ผกากรอง ขวัญข้าว",
-        role: "นายทะเบียน",
+        name: "รศ.ดร.ภก.กร ศรเลิศล้ำวาณิช",
+        role: "ประธานวิทยาลัยการบริหารเภสัชกิจ",
+        position: "กรรมการ",
+    },
+    {
+        image: "/images/committee/member9.png",
+        name: "ศ.ดร.ภก.พรศักดิ์ ศรีอมรศักดิ์",
+        role: "ประธานสภาคณบดีคณะเภสัชศาสตร์ฯ",
+        position: "กรรมการ",
+    },
+    {
+        image: "/images/committee/member10.png",
+        name: "รศ.ดร.ภก.สุมนต์ สกลไชย",
+        role: "ประธานสภาคณบดีคณะเภสัชศาสตร์ฯ",
+        position: "กรรมการ",
+    },
+    {
+        image: "/images/committee/member11.png",
+        name: "รศ.ดร.ภก.สุมนต์ สกลไชย",
+        role: "ผู้ทรงคุณวุฒิ",
+        position: "กรรมการ",
+    },
+    {
+        image: "/images/committee/member12.png",
+        name: "รศ.พิเศษ ภก.กิตติ พิทักษ์นิตินันท์",
+        role: "ผู้ทรงคุณวุฒิ",
+        position: "กรรมการ",
+    },
+    {
+        image: "/images/committee/member13.png",
+        name: "รศ.ภก.ปรีชา มนทกานติกุล",
+        role: "ผู้ทรงคุณวุฒิ",
+        position: "กรรมการ",
+    },
+    {
+        image: "/images/committee/member14.png",
+        name: "ผศ.พิเศษ ดร.ภก.อภิสิทธิ์ ฉัตรทนานนท์",
+        role: "ผู้ทรงคุณวุฒิ",
+        position: "กรรมการ",
+    },
+    {
+        image: "/images/committee/member15.png",
+        name: "ผศ.ดร.ภญ.รจพร วัชโรทยางกูร",
+        role: "ผู้ทรงคุณวุฒิ",
+        position: "กรรมการ",
+    },
+    {
+        image: "/images/committee/member16.png",
+        name: "รศ.ภก.สุรกิจ นาทีสุวรรณ",
+        role: "ผู้ทรงคุณวุฒิ",
+        position: "กรรมการ",
+    },
+    {
+        image: "/images/committee/member17.png",
+        name: "ดร.ภญ.สุภาภรณ์ ปิติพร",
+        role: "ผู้ทรงคุณวุฒิ",
+        position: "Automated water management ",
+    },
+    {
+        image: "/images/committee/member18.png",
+        name: "รศ.ภญ. สุณี เลิศสินอุดม",
+        role: "เลขาธิการสภาเภสัชกรรม",
+        position: "กรรมการและเลขานุการ",
+    },
+    {
+        image: "/images/committee/member19.png",
+        name: "ภก.เพียร เพลินบรรณกิจ",
+        role: "รองเลขาธิการสภาเภสัชกรรม",
+        position: "รองเลขาธิการสภาเภสัชกรรม",
     },
 ];
 
 export default function CommitteeSection() {
     const chairman = MEMBERS[0];
-    const row2 = MEMBERS.slice(1, 3);
-    const row3 = MEMBERS.slice(3, 8);
+    const otherMembers = MEMBERS.slice(1);
 
     return (
         <section className={styles.section}>
 
             {/* HEADER */}
             <div className={styles.header}>
-                <h2>คณะผู้บริหารวิทยาลัยและทีมงาน</h2>
+                <h2>"ผู้นำทางวิชาชีพผู้เปี่ยมด้วยวิสัยทัศน์ ร่วมขับเคลื่อนเกียรติภูมิเภสัชกรไทย"</h2>
                 <p>
-                    &quot;เรามุ่งสร้างมาตรฐานใหม่ของการบริบาลทางเภสัชกรรม ที่ไม่ได้ดูแลแค่ &apos;ยา&apos; แต่ดูแลลึกถึง &apos;พันธุกรรม&apos; ของแต่ละบุคคล&quot;
+                   คณะกรรมการบริหารราชวิทยาลัยเภสัชกรรมแห่งประเทศไทยประกอบด้วยผู้ทรงคุณวุฒิและผู้เชี่ยวชาญ จากหลากหลายสาขาทางเภสัชศาสตร์ ซึ่งได้รับความไว้วางใจให้ทำหน้าที่กำหนดนโยบาย วางรากฐาน และกำกับดูแลมาตรฐานทางวิชาการ
+และการฝึกอบรมเฉพาะทาง ภายใต้ปณิธานที่มุ่งเน้นความถูกต้องตามหลักวิชาการและความล้ำสมัย เพื่อให้ราชวิทยาลัยฯ เป็นเสาหลักในการพัฒนาศักยภาพเภสัชกรให้เป็นที่ยอมรับในระดับสากลและตอบสนองต่อระบบสาธารณสุขของชาติอย่างยั่งยืน
                 </p>
             </div>
 
@@ -68,13 +142,14 @@ export default function CommitteeSection() {
                     <div className={styles.nameArea}>
                         <span className={styles.memberName}>{chairman.name}</span>
                         <span className={styles.memberRole}>{chairman.role}</span>
+                        <span className={styles.memberPosition}>{chairman.position}</span>
                     </div>
                 </div>
             </div>
 
-            {/* ROW 2 - 2 members */}
-            <div className={styles.membersRow} style={{ zIndex: 2 }}>
-                {row2.map((m, i) => (
+            {/* OTHER MEMBERS */}
+            <div className={styles.membersRow}>
+                {otherMembers.map((m, i) => (
                     <div key={i} className={styles.card}>
                         <div className={styles.photoArea}>
                             <img src={m.image} alt={m.name} className={styles.memberPhoto} />
@@ -82,21 +157,7 @@ export default function CommitteeSection() {
                         <div className={styles.nameArea}>
                             <span className={styles.memberName}>{m.name}</span>
                             <span className={styles.memberRole}>{m.role}</span>
-                        </div>
-                    </div>
-                ))}
-            </div>
-
-            {/* ROW 3 - 5 members */}
-            <div className={styles.membersRow} style={{ zIndex: 1, marginBottom: 0 }}>
-                {row3.map((m, i) => (
-                    <div key={i} className={styles.card}>
-                        <div className={styles.photoArea}>
-                            <img src={m.image} alt={m.name} className={styles.memberPhoto} />
-                        </div>
-                        <div className={styles.nameArea}>
-                            <span className={styles.memberName}>{m.name}</span>
-                            <span className={styles.memberRole}>{m.role}</span>
+                            <span className={styles.memberPosition}>{m.position}</span>
                         </div>
                     </div>
                 ))}

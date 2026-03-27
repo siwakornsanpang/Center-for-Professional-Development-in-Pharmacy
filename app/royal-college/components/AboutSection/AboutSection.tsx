@@ -1,8 +1,8 @@
 "use client";
 
 import styles from "./AboutSection.module.css";
-import { FaSearch } from "react-icons/fa";
-import { LuListFilter, LuChevronDown } from "react-icons/lu";
+import { FaUsers, FaPills, FaBookOpen } from "react-icons/fa";
+import { LuBookOpen } from "react-icons/lu";
 
 export default function AboutSection() {
   return (
@@ -16,48 +16,57 @@ export default function AboutSection() {
             className={styles.image}
           />
           <div className={styles.imageOverlay}>
-            <h3 className={styles.overlayTitle}>วิทยาลัยเภสัชกรรมสมุนไพร</h3>
+            <h3 className={styles.overlayTitle}>ราชวิทยาลัยเภสัชกรรมแห่งประเทศไทย</h3>
             <p className={styles.overlaySubtitle}>
-              College of Herbal Pharmacy of Thailand
+              The Royal College of Pharmacy of Thailand.
             </p>
           </div>
         </div>
       </div>
 
-      {/* Right Column: Text & Search */}
+      {/* Right Column: Text & Stats */}
       <div className={styles.contentSection}>
-        <h2 className={styles.headline}>
-          ศาสตร์สมุนไพรไทยสู่มาตรฐานวิชาชีพสากล
-          
-        </h2>
-        <p className={styles.description}>
-         วิทยาลัยเภสัชกรรมสมุนไพรแห่งประเทศไทย เป็นองค์กรวิชาการภายใต้ราชวิทยาลัยเภสัชกรรมแห่งประเทศไทย 
-         ที่มุ่งพัฒนาความเชี่ยวชาญเฉพาะทางด้านเภสัชกรรมสมุนไพร
-          ส่งเสริมการวิจัยและนวัตกรรม เพื่อให้สมุนไพรไทยมีคุณภาพ มาตรฐาน และสามารถนำไปใช้ประโยชน์ได้อย่างปลอดภัยและยั่งยืน
+        <p className={styles.mainDescription}>
+          ราชวิทยาลัยเภสัชกรรมแห่งประเทศไทย ก่อตั้งขึ้นตามปณิธาน 
+          ที่มุ่งมั่นของสภาเภสัชกรรมเพื่อเป็นองค์กรหลักในการกำกับดูแล
+          มาตรฐานทางวิชาการ และพัฒนาทักษะวิชาชีพเชิงลึก
+          โดยการรวมกลุ่มของวิทยาลัยชำนาญการทั้ง 7 สาขา มุ่งเน้น
+          การสร้างผู้เชี่ยวชาญที่มีความรู้ความสามารถเป็นที่ยอมรับ
+          ในระดับสากลเพื่อสวัสดิการและสุขภาวะที่ดีของประชาชน
         </p>
 
-        {/* Search Card */}
-        <div className={styles.searchCard}>
-          <h3 className={styles.searchTitle}>ค้นหารายชื่อ</h3>
-          <p className={styles.searchSubtitle}>ผู้ประกอบวิชาชีพเภสัชกรรม</p>
-
-          <div className={styles.inputGroup}>
-            <div className={styles.dropdown}>
-              <LuListFilter className={styles.filterIcon} />
-              <span>เลขที่ใบอนุญาต</span>
-              <LuChevronDown className={styles.chevronIcon} />
+        {/* Stats Grid */}
+        <div className={styles.statsGrid}>
+          <div className={styles.statCard}>
+            <div className={styles.statContent}>
+              <h3 className={styles.statNumber}>7</h3>
+              <p className={styles.statLabel}>วิทยาลัยเฉพาะทาง</p>
             </div>
-            
-            <div className={styles.searchInputWrapper}>
-              <FaSearch className={styles.searchIcon} />
-              <input
-                type="text"
-                placeholder="ค้นหาเลขที่ใบอนุญาต"
-                className={styles.searchInput}
-              />
-            </div>
+            <FaBookOpen className={styles.statIcon} />
+          </div>
 
-            <button className={styles.searchButton}>ค้นหา</button>
+          <div className={styles.statCard}>
+            <div className={styles.statContent}>
+              <h3 className={styles.statNumber}>1500+</h3>
+              <p className={styles.statLabel}>สมาชิกทั่วประเทศ</p>
+            </div>
+            <FaUsers className={styles.statIcon} />
+          </div>
+
+          <div className={styles.statCard}>
+            <div className={styles.statContent}>
+              <h3 className={styles.statNumber}>200+</h3>
+              <p className={styles.statLabel}>หลักสูตรอบรม/ปี</p>
+            </div>
+            <LuBookOpen className={styles.statIcon} />
+          </div>
+
+          <div className={styles.statCard}>
+            <div className={styles.statContent}>
+              <h3 className={styles.statNumber}>50+</h3>
+              <p className={styles.statLabel}>งานวิจัยตีพิมพ์/ปี</p>
+            </div>
+            <FaPills className={styles.statIcon} />
           </div>
         </div>
       </div>

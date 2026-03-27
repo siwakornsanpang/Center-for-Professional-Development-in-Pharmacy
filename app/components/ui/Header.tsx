@@ -4,10 +4,10 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.left}>
-        <img src="/images/favicon.png" className={styles.logo} />
-        <div>
-          <h1>วิทยาลัยเภสัชกรรมสมุนไพร</h1>
-          <p>College of Herbal Pharmacy of Thailand</p>
+        <img src="/favicon.ico" alt="Logo" className={styles.logo} />
+        <div className={styles.textContainer}>
+          <h1>สภาเภสัชกรรม</h1>
+          <p>The Pharmacy Council of Thailand</p>
         </div>
       </div>
 

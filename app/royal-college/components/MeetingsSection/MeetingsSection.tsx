@@ -4,7 +4,7 @@ const MEETINGS = [
     {
         day: "2",
         month: "พ.ค.",
-        title: "วภพ. จัดอบรม: AI พลิกโฉมการผลิตยาจากสมุนไพร",
+        title: "สภาเภสัชกรรมเปิดอบรมหลักสูตรอบรมระยะสั้นการบริบาลทางเภสัชกรรม(สาขาปฐมภูมิ) รุ่นที่ 5",
         location: "ห้อง Sapphire 204-206 ศูนย์การประชุม อิมแพ็ค ฟอรั่ม เมืองทองธานี จังหวัดนนทบุรี",
         dateRange: "วันที่จัดประชุม : 02 พ.ค. 2569 - 13 ก.ย. 2569",
         participants: (
@@ -16,7 +16,7 @@ const MEETINGS = [
     {
         day: "1",
         month: "มี.ค.",
-        title: "ประชุมวิชาการ วภพ.: เภสัชพันธุศาสตร์และนวัตกรรมสมุนไพร",
+        title: "Pharmacy Research and Innovation Summit 2025: (PRIS2025) Synergizing for the better future",
         location: "ห้อง Sapphire 204-206 ศูนย์การประชุม อิมแพ็ค ฟอรั่ม เมืองทองธานี จังหวัดนนทบุรี",
         dateRange: "วันที่จัดประชุม : 02 มี.ค. 2569 - 13 มี.ค. 2569",
         participants: (
@@ -28,7 +28,7 @@ const MEETINGS = [
     {
         day: "13",
         month: "ก.พ.",
-        title: "เปิดรับสมัคร: หลักสูตรเภสัชพันธุศาสตร์คลินิกและสมุนไพร รุ่นที่ 5",
+        title: "การฝึกอบรม ประกาศนียบัตรวิชาชีพเภสัชกรรม (สาขาบริหารจัดการผลิตภัณฑ์สุขภาพ(ไทย) รุ่นที่ 3",
         location: "ห้อง Sapphire 204-206 ศูนย์การประชุม อิมแพ็ค ฟอรั่ม เมืองทองธานี จังหวัดนนทบุรี",
         dateRange: "วันที่จัดประชุม : 02 พ.ค. 2569 - 13 ก.ย. 2569",
         participants: (
@@ -43,7 +43,7 @@ export default function MeetingsSection() {
     return (
         <section className={styles.meetingsSection}>
             <div className={styles.meetingsHeader}>
-                <h2>การประชุมวิทยาลัยเภสัชกรรมสมุนไพร</h2>
+                <h2>การประชุมราชวิทยาลัยเภสัชกรรม</h2>
                 <span className={styles.viewAll}>ดูทั้งหมด &gt;</span>
             </div>
 
