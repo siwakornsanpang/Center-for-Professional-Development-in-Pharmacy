@@ -43,7 +43,7 @@ export default function MeetingsSection() {
     return (
         <section className={styles.meetingsSection}>
             <div className={styles.meetingsHeader}>
-                <h2>การประชุมคณะกรรมการการศึกษาเภสัชศาสตร์</h2>
+                <h2>การประชุมศูนย์พัฒนาการบริการทางวิชาชีพเภสัชกรรม</h2>
                 <span className={styles.viewAll}>ดูทั้งหมด &gt;</span>
             </div>
 

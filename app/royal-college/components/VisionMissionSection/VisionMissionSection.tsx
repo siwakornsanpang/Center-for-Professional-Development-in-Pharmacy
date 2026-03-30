@@ -6,8 +6,9 @@ export default function VisionMissionSection() {
         <section className={styles.sectionContainer}>
             <div className={styles.headerArea}>
                 <h2 className={styles.mainHeading}>
-                    &quot;บ่มเพาะคุณภาพ สร้างมาตรฐาน:<br />
-                    บทบาทคณะกรรมการการศึกษาเภสัชศาสตร์ จากอดีตสู่อนาคต&quot;
+                    &quot;มุ่งยกระดับร้านยาคุณภาพสู่มาตรฐานสากล ผ่านการพัฒนาเกณฑ์
+                    การรับรองสถานประกอบการ เสริมศักยภาพเภสัชกร
+                    และสร้างความเชื่อมั่นให้ประชาชน&quot;
                 </h2>
             </div>
 
@@ -23,12 +24,11 @@ export default function VisionMissionSection() {
                         </div>
                         <h3 className={styles.cardTitle}>วิสัยทัศน์</h3>
                         <p className={styles.cardText}>
-                            &quot;เป็นองค์กรที่ส่งเสริมความเข้มแข็งของการศึกษาเภสัชศาสตร์ที่ชี้นำสังคม<br />
-                            บนมาตรฐานวิชาชีพและจริยธรรม เน้นการจัดการที่เป็นภาคีเครือข่าย&quot;
+                            &quot;เป็นผู้นำระดับสากลในการขับเคลื่อนนวัตกรรม
+                            การบริการทางวิชาชีพเภสัชกรรม เพื่อสุขภาวะที่ดีของสังคม&quot;
                         </p>
                     </div>
                     <div className={styles.imageWrapper}>
-                        <div className={styles.imageGradientOverlay}></div>
                         <Image
                             src="/images/vision/img1.png"
                             alt="Vision"
@@ -49,14 +49,16 @@ export default function VisionMissionSection() {
                         </div>
                         <h3 className={styles.cardTitle}>พันธกิจ</h3>
                         <div className={styles.missionList}>
-                            <p><strong>Standardization:</strong> สร้างหลักประกันให้กับสังคมด้านมาตรฐานวิชาชีพของหลักสูตรการศึกษาเภสัชศาสตร์</p>
-                            <p><strong>Quality Assurance:</strong> มีระบบการรับรองคุณภาพสถานบันการศึกษาและแหล่งฝึกปฎิบัติงานวิชาชีพ</p>
-                            <p><strong>Ethics &amp; Integrity:</strong> สร้างหลักประกันด้านคุณภาพและจริยธรรมของเภสัชกรใหม่ที่เข้าสู่วิชาชีพ</p>
-                            <p><strong>Collaboration:</strong> ดำเนินงานในลักษณะภาคีเครือข่ายร่วมกับสถาบันการศึกษาและหน่วยงานที่เกี่ยวข้อง</p>
+                            <p><strong>Professional Excellence:</strong><br/>พัฒนาหลักสูตรและจัดอบรมเพื่อเพิ่มพูนทักษะวิชาชีพ
+                            เภสัชกรรมอย่างต่อเนื่อง</p>
+                            <p><strong>Innovation &amp; Research:</strong><br/>ส่งเสริมการวิจัยและสร้างสรรค์นวัตกรรมในการดูแลผู้ป่วย</p>
+                            <p><strong>Standard Setting:</strong> กำหนดและยกระดับมาตรฐานการ
+                            บริการเภสัชกรรมให้เป็นที่ยอมรับในระดับสากล</p>
+                            <p><strong>Collaboration:</strong><br/>สร้างเครือข่ายความร่วมมือระหว่างองค์กรวิชาชีพ
+                            ทั้งในและต่างประเทศ</p>
                         </div>
                     </div>
                     <div className={styles.imageWrapper}>
-                        <div className={styles.imageGradientOverlay}></div>
                         <Image
                             src="/images/vision/img2.png"
                             alt="Mission"

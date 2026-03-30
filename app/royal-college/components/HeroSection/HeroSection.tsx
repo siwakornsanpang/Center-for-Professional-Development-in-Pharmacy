@@ -6,8 +6,8 @@ export default function HeroSection() {
             <div className={styles.container}>
                 
                 <div className={styles.textContent}>
-                    <h1 className={styles.titleTh}>คณะกรรมการการศึกษาเภสัชศาสตร์</h1>
-                    <h2 className={styles.titleEn}>Board of Pharmacy Education</h2>
+                    <h1 className={styles.titleTh}>ศูนย์พัฒนาการบริการทางวิชาชีพเภสัชกรรม</h1>
+                    <h2 className={styles.titleEn}>Center for Professional Development in Pharmacy</h2>
                 </div>
             </div>
         </section>

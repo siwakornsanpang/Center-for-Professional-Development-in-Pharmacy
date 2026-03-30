@@ -16,9 +16,9 @@ export default function AboutSection() {
             className={styles.image}
           />
           <div className={styles.imageOverlay}>
-            <h3 className={styles.overlayTitle}>คณะกรรมการการศึกษาเภสัชศาสตร์</h3>
+            <h3 className={styles.overlayTitle}>ศูนย์พัฒนาการบริการทางวิชาชีพเภสัชกรรม</h3>
             <p className={styles.overlaySubtitle}>
-              Board of Pharmacy Education
+              Center for Professional Development in Pharmacy
             </p>
           </div>
         </div>
@@ -26,12 +26,12 @@ export default function AboutSection() {
 
       {/* Right Column: Text & Search */}
       <div className={styles.contentSection}>
-        <h2 className={styles.headline}>
-          "สร้างรากฐานการศึกษาเภสัชศาสตร์ที่เข้มแข็ง เพื่ออนาคตของระบบสาธารณสุขไทย"
-          
-        </h2>
+        
         <p className={styles.description}>
-         คณะกรรมการการศึกษาเภสัชศาสตร์ เป็นหน่วยงานภายใต้สภาเภสัชกรรมที่มีหน้าที่หลักในการกำหนดทิศทาง พัฒนา และรับรองมาตรฐานการศึกษาเภสัชศาสตร์ในระดับอุดมศึกษา เพื่อให้มั่นใจว่าบัณฑิตเภสัชกรทุกคนมีความรู้ ทักษะ และจริยธรรม พร้อมสำหรับการปฏิบัติงานในทุกมิติ
+         ศูนย์พัฒนาการบริการทางวิชาชีพเภสัชกรรม พื้นที่แห่งการเรียนรู้
+และการพัฒนาที่ไม่หยุดนิ่ง เรามุ่งมั่นที่จะเป็นกลไกสำคัญในการสนับสนุน
+เภสัชกรและบุคลากรทางการแพทย์ ให้มีความเชี่ยวชาญเท่าทันเทคโนโลยี
+และนวัตกรรมยาที่เปลี่ยนแปลงไป เพื่อส่งมอบการดูแลสุขภาพที่มีคุณภาพ ปลอดภัย และมีประสิทธิภาพสูงสุดให้แก่ประชาชน
         </p>
 
         {/* Search Card */}

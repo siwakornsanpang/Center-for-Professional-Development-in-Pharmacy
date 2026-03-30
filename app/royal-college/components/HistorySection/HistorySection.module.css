@@ -124,14 +124,21 @@
     flex: 1;
     font-size: 18px;
     font-weight: 600;
-    font-style: bold;
     color: #000000B3;
     line-height: 1.7;
     margin: 0;
     padding: 18px 0 18px 36px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     white-space: pre-wrap;
+}
+
+.descTitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 2px;
 }
 
 /* ===================== BADGE ===================== */
@@ -235,3 +242,50 @@
         font-size: 24px;
     }
 }
+
+@media (max-width: 480px) {
+    .historySection {
+        padding: 20px 12px !important;
+        gap: 16px;
+    }
+
+    .historyMenu {
+        min-width: unset;
+    }
+
+    .historyMenu h3 {
+        font-size: 16px;
+    }
+
+    .menuItem {
+        font-size: 14px;
+        padding: 10px 14px;
+    }
+
+    .mainHeading {
+        font-size: 20px;
+    }
+
+    .subText {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .yearText {
+        font-size: 14px;
+    }
+
+    .titleText {
+        font-size: 14px;
+    }
+
+    .timelineDesc {
+        font-size: 14px;
+        padding: 8px 0 12px 0;
+    }
+
+    .descTitle {
+        font-size: 14px;
+    }
+}
+

@@ -10,8 +10,8 @@ const ibmPlexSansThai = IBM_Plex_Sans_Thai({
 });
 
 export const metadata = {
-  title: "คณะกรรมการการศึกษาเภสัชศาสตร์",
-  description: "Board of Pharmacy Education",
+  title: "ศูนย์พัฒนาการบริการทางวิชาชีพเภสัชกรรม",
+  description: "Center for Professional Development in Pharmacy",
 };
 
 export default function RootLayout({

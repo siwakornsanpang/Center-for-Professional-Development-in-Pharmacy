@@ -45,13 +45,14 @@ export default function LocationSection() {
                     <img src="/images/location/img1.png" alt="Pharmacist" className={styles.mainImage} />
                     <div className={styles.leftText}>
                         <h3>"รากฐานที่มั่นคง สู่การเชื่อมโยงเครือข่ายวิชาชีพทั่วไทย"</h3>
-                        <p>เราพร้อมเป็นพื้นที่เปิดกว้างสำหรับการเรียนรู้ การประชุมสัมมนา และการสร้างสรรค์นวัตกรรมทางเภสัชกรรมเพื่อประโยชน์สูงสุดของเพื่อนร่วมวิชาชีพและประชาชน</p>
+                        <p>เราพร้อมเป็นพื้นที่เปิดกว้างสำหรับการเรียนรู้ การประชุมสัมมนา และการสร้างสรรค์นวัตกรรม
+ทางเภสัชกรรมเพื่อประโยชน์สูงสุดของเพื่อนร่วมวิชาชีพและประชาชน</p>
                     </div>
                 </div>
 
                 {/* RIGHT: Full green contact card */}
                 <div className={styles.rightColumn}>
-                    <h2 className={styles.rightTitle}>คณะกรรมการการศึกษาเภสัชศาสตร์</h2>
+                    <h2 className={styles.rightTitle}>ศูนย์พัฒนาการบริการทางวิชาชีพเภสัชกรรม</h2>
 
                     <div className={styles.contactList}>
 

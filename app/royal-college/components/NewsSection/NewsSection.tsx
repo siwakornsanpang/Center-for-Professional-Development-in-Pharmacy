@@ -27,7 +27,7 @@ export default function NewsSection() {
             <div className={styles.newsContainer}>
                 {/* HIGHLIGHTS */}
                 <div className={styles.newsHeader}>
-                    <h2>เรื่องเด่นคณะกรรมการการศึกษาเภสัชศาสตร์</h2>
+                    <h2>เรื่องเด่นศูนย์พัฒนาการบริการทางวิชาชีพเภสัชกรรม</h2>
                     <div className={styles.newsNav}>
                         <button className={styles.navBtn}>&lt;</button>
                         <button className={styles.navBtn}>&gt;</button>
@@ -56,7 +56,7 @@ export default function NewsSection() {
 
                 {/* NEWS */}
                 <div className={styles.newsRowHeader}>
-                    <h2>ข่าวสาร</h2>
+                    <h2>ข่าวสารศูนย์พัฒนาการบริการทางวิชาชีพเภสัชกรรม</h2>
                     <span className={styles.viewAll}>ดูทั้งหมด &gt;</span>
                 </div>
 

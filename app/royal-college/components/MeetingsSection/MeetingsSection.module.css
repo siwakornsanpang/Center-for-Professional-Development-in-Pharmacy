@@ -190,3 +190,34 @@
         height: 200px;
     }
 }
+
+@media (max-width: 480px) {
+    .meetingsSection {
+        padding: 20px 12px !important;
+    }
+
+    .meetingsHeader h2 {
+        font-size: 22px;
+    }
+
+    .dateBox h3 {
+        font-size: 32px;
+    }
+
+    .dateBox span {
+        font-size: 12px;
+    }
+
+    .meetingContent h4 {
+        font-size: 16px;
+    }
+
+    .detailRow {
+        font-size: 12px;
+    }
+
+    .meetingImage {
+        height: 160px;
+    }
+}
+
