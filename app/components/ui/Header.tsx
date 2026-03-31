@@ -6,8 +6,8 @@ export default function Header() {
       <div className={styles.left}>
         <img src="/favicon.ico" alt="Logo" className={styles.logo} />
         <div className={styles.textContainer}>
-          <h1>สภาเภสัชกรรม</h1>
-          <p>The Pharmacy Council of Thailand</p>
+          <h1>ศูนย์พัฒนาการบริการทางวิชาชีพเภสัชกรรม</h1>
+          <p>Center for Professional Development in Pharmacy</p>
         </div>
       </div>
 
