@@ -1,4 +1,4 @@
-import RoyalCollegePage from "./royal-college/page";
+import RoyalCollegePage from "./center-for-professional/page";
 
 export default function Home() {
   return <RoyalCollegePage />;
