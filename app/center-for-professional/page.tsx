@@ -1,5 +1,5 @@
-import HeroSection from "./components/HeroSection/HeroSection";
-import AboutSection from "./components/AboutSection/AboutSection";
+import HeroSection from "../components/ui/BannerSection/BannerSection";
+import AboutSection from "./components/SidebarTabsSection/Tabs/AboutSection/AboutSection";
 import SidebarTabsSection from "./components/SidebarTabsSection/SidebarTabsSection";
 import HighlightSection from "./components/HighlightSection/HighlightSection";
 import MeetingsSection from "./components/MeetingsSection/MeetingsSection";

@@ -1,59 +1,48 @@
 "use client";
-import { useState } from "react";
-import CommitteeSection from "../CommitteeSection/CommitteeSection";
-import LocationSection from "../LocationSection/LocationSection";
-import VisionMissionSection from "../VisionMissionSection/VisionMissionSection";
+import { useState, useMemo } from "react";
+import Sidebar, { MenuItem, TabId } from "./Sidebar";
+
+// นำเข้า Sections ต่างๆ จากโครงสร้างโฟลเดอร์ของคุณ
+import HistorySection from "./Tabs/HistorySection/HistorySection";
+import VisionMissionSection from "./Tabs/VisionMissionSection/VisionMissionSection";
+import CommitteeSection from "./Tabs/CommitteeSection/CommitteeSection";
+import LocationSection from "./Tabs/LocationSection/LocationSection";
 
 import styles from "./SidebarTabsSection.module.css";
-import HistorySection from "../HistorySection/HistorySection";
 
-const MENU_ITEMS = [
-    "ประวัติความเป็นมา",
-    "วิสัยทัศน์และพันธกิจ",
-    "คณะกรรมการ",
-    "สถานที่ตั้ง",
+// กำหนดข้อมูลเมนูโดยใช้ String ID แทน Index (ตัวเลข)
+const MENU_ITEMS: MenuItem[] = [
+    { id: "history", label: "ประวัติความเป็นมา" },
+    { id: "vision", label: "วิสัยทัศน์และพันธกิจ" },
+    { id: "committee", label: "คณะกรรมการบริหาร" },
+    { id: "location", label: "ติดต่อและสถานที่ตั้ง" },
 ];
 
-
-
-
-
 export default function SidebarTabsSection() {
-    const [activeTab, setActiveTab] = useState(0);
+    // ใช้ String ID ('history') เป็นค่าเริ่มต้นแทนตัวเลข 0
+    const [activeTab, setActiveTab] = useState<TabId>("history");
+
+    // ใช้ Object Mapping จับคู่ ID กับ Component (คลีนกว่า if-else หรือ &&)
+    const tabContent: Record<TabId, React.ReactNode> = useMemo(() => ({
+        history: <HistorySection />,
+        vision: <VisionMissionSection />,
+        committee: <CommitteeSection />,
+        location: <LocationSection />,
+    }), []);
 
     return (
         <section className={styles.historySection}>
+            
+            {/* LEFT MENU: เรียกใช้ Component ที่แยกไว้ */}
+            <Sidebar 
+                menuItems={MENU_ITEMS} 
+                activeTab={activeTab} 
+                onTabChange={setActiveTab} 
+            />
 
-            {/* LEFT MENU */}
-            <div className={styles.historyMenu}>
-                <h3>"อัปเกรดทักษะวิชาชีพ...<br></br> ไม่หยุดเรียนรู้ ก้าวสู่เภสัชกรแถวหน้า"</h3>
-
-                <ul>
-                    {MENU_ITEMS.map((item, index) => (
-                        <li
-                            key={index}
-                            className={`${styles.menuItem} ${activeTab === index ? styles.active : ""}`}
-                            onClick={() => setActiveTab(index)}
-                        >
-                            {item}
-                        </li>
-                    ))}
-                </ul>
-            </div>
-
-            {/* RIGHT CONTENT */}
+            {/* RIGHT CONTENT: ดึง Component ออกมาแสดงผลตาม ID ตรงๆ */}
             <div className={styles.historyContent}>
-
-                {activeTab === 0 && <HistorySection />}
-
-                {activeTab === 1 && <VisionMissionSection />}
-
-                {activeTab === 2 && <CommitteeSection />}
-
-
-
-                {activeTab === 3 && <LocationSection />}
-
+                {tabContent[activeTab]}
             </div>
 
         </section>
